@@ -1,0 +1,22 @@
+title: Your awesome title
+email: your-email@domain.com
+author: GitHub User
+copyright: Copyright © 1970-2010
+description: >-
+  Write an awesome description for your new site here. You can edit this line in
+  _config.yml. It will appear in your document head meta (for Google search
+  results) and in your feed.xml site description.
+baseurl: ''
+url: ''
+favicon: ''
+yat:
+  date_format: '%b %d, %Y'
+markdown: kramdown
+kmarkdown:
+  input: GFM
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-spaceship

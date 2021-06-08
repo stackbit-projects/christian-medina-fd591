@@ -1,0 +1,100 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+publishDir: _site
+dataDir: _data
+pagesDir: ''
+models:
+  post:
+    type: page
+    label: Post
+    folder: _posts
+    match: '*'
+    exclude:
+      - 2018-12-07-welcome-to-jekyll.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: subtitle
+        label: Subtitle
+      - type: string
+        name: categories
+        label: Categories
+      - type: list
+        name: tags
+        label: Tags
+        items:
+          type: string
+      - type: string
+        name: author
+        label: Author
+      - type: string
+        name: meta
+        label: Meta
+  post_1:
+    type: page
+    label: Post 1
+    folder: _posts
+    match:
+      - 2018-12-07-welcome-to-jekyll.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: subheading
+        label: Subheading
+      - type: string
+        name: author
+        label: Author
+      - type: string
+        name: categories
+        label: Categories
+      - type: string
+        name: banner
+        label: Banner
+      - type: string
+        name: tags
+        label: Tags
+  defaults:
+    type: data
+    label: Defaults
+    file: defaults.yml
+    fields:
+      - type: object
+        name: home
+        label: Home
+        fields:
+          - type: string
+            name: heading
+            label: Heading
+          - type: string
+            name: subheading
+            label: Subheading
+          - type: string
+            name: banner
+            label: Banner
+  translate_langs:
+    type: data
+    label: Translate Langs
+    file: translate_langs.yml
+    isList: true
+    items:
+      type: object
+      fields:
+        - type: string
+          name: lang
+          label: Lang
+        - type: image
+          name: img
+          label: Img
+        - type: string
+          name: text
+          label: Text
